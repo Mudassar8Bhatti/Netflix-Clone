@@ -1,0 +1,665 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@600&family=Poppins:wght@300;400;700&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+}
+
+.main {
+    background-image: url("PK-en-20250915-TRIFECTA-perspective_8dca2c96-6108-4a4e-aeb1-9bf033339db1_large.jpg");
+    height: 645px;
+    width: auto;
+    position: relative;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: max(1200px, 100vw);
+}
+
+.main .box {
+    height: 645px;
+    width: 100%;
+    opacity: 0.7;
+    background-color: black;
+    position: absolute;
+    top: 0;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    height: 80px;
+    position: relative;
+    z-index: 10;
+    justify-content: space-around;
+    padding-top: 12px;
+    padding-left: 20px;
+}
+
+nav .logo {
+    padding-right: 250px;
+}
+
+.btn {
+    height: 34px;
+    width: 75px;
+    border-radius: 8px;
+    background-color: red;
+    color: white;
+    border-style: none;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background-color: rgb(188, 7, 7);
+    transition: all 0.3s ease-in-out;
+}
+
+
+.hero {
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    top: 100px;
+    position: relative;
+    margin: auto;
+    text-align: center;
+}
+
+.span1 {
+    font-size: 55px;
+    font-weight: bold;
+    max-width: 60vw;
+}
+
+.span2 {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.span3 {
+    margin-top: 30px;
+}
+
+.hero input {
+    height: 53px;
+    width: 400px;
+    background-color: rgba(53, 51, 51, 0.687);
+    color: white;
+    border-radius: 4px;
+    border-style: none;
+    margin-top: 20px;
+    font-size: 15px;
+    padding-left: 20px;
+    border: 1px solid rgb(94, 91, 91);
+}
+
+.hero input::placeholder {
+    color: white;
+    font-size: 14px;
+}
+
+.hero button {
+    height: 55px;
+    width: 200px;
+    color: white;
+    background-color: rgb(245, 6, 6);
+    border-radius: 4px;
+    border-style: none;
+    font-weight: bold;
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+.hero button:hover {
+    background-color: rgb(188, 7, 7);
+    transition: all 0.3s ease-in-out;
+}
+
+input:valid {
+    border: 2px solid green;
+}
+
+.seperation {
+    height: 7px;
+    background-color: rgb(113, 11, 11);
+    position: relative;
+    top: 240px;
+    border-radius: 70%;
+    margin-bottom: 20px;
+}
+
+.shad {
+    box-shadow: 10px 30px 35px 15px rgba(36, 36, 113, 0.685);
+    margin: auto;
+    width: 800px;
+    border-radius: 100%;
+    height: 8px;
+}
+
+.text,
+.textt,
+.texttt {
+    color: white;
+    margin-top: 65px;
+    margin-left: 130px;
+    font-size: 15px;
+}
+
+.slider {
+    width: 100%;
+    overflow: hidden;
+    padding: 20px 0;
+}
+
+.track {
+    display: flex;
+    animation: scroll 15s linear infinite;
+}
+
+.b1 {
+    height: 300px;
+    width: 200px;
+    margin: 20px;
+    flex-shrink: 0;
+    position: relative;
+}
+
+.b1 img {
+    border-radius: 15px;
+    height: 300px;
+    width: 200px;
+    object-fit: cover;
+}
+
+.one {
+    position: absolute;
+    bottom: 5px;
+    left: -20px;
+}
+
+.b1:hover {
+    transform: scale(1.05);
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.track:hover {
+    animation-play-state: paused;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-200%);
+    }
+}
+
+
+.reasons {
+    display: flex;
+    justify-content: space-around;
+    max-width: 80vw;
+    margin: auto;
+    flex-wrap: wrap;
+}
+
+.reason {
+    min-height: 330px;
+    max-width: 240px;
+    background: linear-gradient(to bottom, rgba(36, 36, 112, 0.685), rgba(109, 67, 74, 0.678));
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+
+.reason h2 {
+    color: white;
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-right: 10px;
+}
+
+.reason p {
+    color: rgba(207, 203, 203, 0.815);
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-right: 10px;
+}
+
+.reason1 img {
+    margin-left: 150px;
+    margin-top: 32px;
+    height: 80px;
+}
+
+.reason2 img {
+    margin-left: 150px;
+    margin-top: 12px;
+    height: 70px;
+}
+
+.reason3 img {
+    margin-left: 150px;
+    margin-top: 20px;
+    height: 70px;
+    width: 60px;
+}
+
+.reason4 img {
+    margin-left: 150px;
+    margin-top: 10px;
+    height: 60px;
+    width: 60px;
+}
+
+
+#aw {
+    color: white;
+    margin-top: 60px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.footerform {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.footerform input {
+    height: 53px;
+    width: 600px;
+    background-color: rgba(53, 51, 51, 0.687);
+    color: white;
+    border-radius: 4px;
+    border-style: none;
+    margin-top: 20px;
+    font-size: 15px;
+    border: 1px solid rgb(94, 91, 91);
+    padding-left: 20px;
+}
+
+.footerform input::placeholder {
+    color: white;
+    font-size: 14px;
+}
+
+.footerform button {
+    height: 55px;
+    width: 200px;
+    color: white;
+    background-color: rgb(245, 6, 6);
+    border-radius: 4px;
+    border-style: none;
+    font-weight: bold;
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+.footerform button:hover {
+    background-color: rgb(188, 7, 7);
+    transition: all 0.3s ease-in-out;
+}
+
+.footertext {
+    margin-left: 130px;
+}
+
+.footertext a {
+    color: rgb(158, 153, 153);
+}
+
+.foot {
+    display: flex;
+    width: 80vw;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 60px;
+}
+
+.foot p {
+    height: 20px;
+    width: 250px;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.foot p:hover {
+    color: white;
+    transition: all 0.4s ease-out;
+}
+
+.footerbutton button {
+    margin-left: 130px;
+    height: 30px;
+    width: 130px;
+    background-color: transparent;
+    color: white;
+    border-style: none;
+    border: 1px solid white;
+    font-size: 16px;
+}
+
+.footerbutton i {
+    margin-left: 15px;
+}
+
+.footerbutton {
+    color: white;
+    margin-bottom: 30px;
+}
+
+.Netflix {
+    margin-left: 130px;
+    color: rgb(183, 177, 177);
+}
+
+.NetPa {
+    margin-left: 130px;
+    color: rgb(183, 177, 177);
+    font-size: 13px;
+    margin-top: 30px;
+    margin-bottom: 100px;
+}
+
+.NetPa a {
+    color: rgba(24, 85, 199, 0.838);
+}
+
+@media (max-width:500px) {
+
+    nav {
+        height: 130px;
+        position: relative;
+        z-index: 10;
+        padding-top: 20px;
+        padding-left: 20px;
+    }
+
+    nav .logo {
+        width: 270px;
+        height: 120px;
+        padding-top: 30px;
+        padding-right: 500px;
+    }
+
+    .btn {
+        height: 80px;
+        width: 130px;
+        border-radius: 8px;
+        font-size: 29px;
+        font-weight: bold;
+    }
+
+    .main {
+        height: 645px;
+        width: 285%;
+        position: relative;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+
+    .main .box {
+        height: 645px;
+        width: 100%;
+        opacity: 0.7;
+        background-color: black;
+        position: absolute;
+        top: 0;
+    }
+
+    .hero .span1 {
+        position: relative;
+        top: -70px;
+        font-size: 50px;
+        max-width: 500px;
+    }
+
+    .hero .span2 {
+        position: relative;
+        top: -70px;
+        font-size: 33px;
+    }
+
+    .hero .span3 {
+        position: relative;
+        top: -95px;
+        font-size: 30px;
+        max-width: 540px;
+        text-align: center;
+    }
+
+    .hero form input {
+        position: relative;
+        top: -90px;
+        height: 77px;
+        width: 550px;
+    }
+
+    .hero form input::placeholder {
+        font-size: 25px;
+    }
+
+    .hero form button {
+        position: relative;
+        top: -90px;
+        height: 78px;
+        font-size: 27px;
+    }
+
+    .main .seperation {
+        position: relative;
+        top: 20px;
+    }
+
+    main .slider {
+        width: 284%;
+    }
+
+    main .text {
+        padding-left: 50px;
+        padding-top: 20px;
+        width: 500px;
+        font-size: 23px;
+        margin-left: 0;
+    }
+
+    main .textt {
+        padding-top: 50px;
+        color: white;
+        padding-left: 50px;
+        width: 600px;
+        font-size: 24px;
+        margin: 0;
+    }
+
+    .reasons .reason {
+        min-width: 258vw;
+        font-size: 30px;
+        padding-left: 10px;
+        margin-left: 10px;
+        position: relative;
+    }
+
+    .reasons .reason1 img {
+        height: 200px;
+        width: 180px;
+        position: absolute;
+        bottom: 0;
+        right: 0px;
+    }
+
+    .reasons .reason2 img {
+        height: 200px;
+        width: 180px;
+        position: absolute;
+        bottom: 0;
+        right: 0px;
+    }
+
+    .reasons .reason3 img {
+        height: 200px;
+        width: 180px;
+        position: absolute;
+        bottom: 0;
+        right: 0px;
+    }
+
+    .reasons .reason4 img {
+        height: 200px;
+        width: 180px;
+        position: absolute;
+        bottom: 0;
+        right: 0px;
+        padding-top: 50px;
+    }
+
+
+    footer #aw {
+        font-size: 34px;
+        min-width: 270vw;
+        margin: 0;
+        padding-top: 50px;
+        padding-left: 45px;
+    }
+
+    footer .footerform input {
+        height: 120px;
+        min-width: 250vw;
+        margin-left: 50px;
+        padding-left: 40px;
+        font-size: 30px;
+    }
+
+    footer .footerform input::placeholder {
+        font-size: 30px;
+        color: rgb(171, 166, 166);
+    }
+
+    footer .footerform button {
+        height: 120px;
+        width: 340px;
+        font-size: 40px;
+        margin-top: 30px;
+        border-radius: 5px;
+        margin-left: 50px;
+    }
+
+    footer .footertext {
+        font-size: 40px;
+        min-width: 200vw;
+        margin: 0;
+        padding: 50px;
+    }
+
+    footer .foot p {
+        font-size: 25px;
+        padding-top: 25px;
+        padding-bottom: 10px;
+        min-width: 200vw;
+    }
+
+    .footerbutton button {
+        height: 100px;
+        width: 250px;
+        margin-left: 50px;
+        font-size: 35px;
+    }
+
+    .footerbutton i {
+        font-size: 35px;
+    }
+
+    .Netflix {
+        margin-left: 40px;
+        font-size: 40px;
+        min-width: 230vw;
+        color: rgb(183, 177, 177);
+        padding-top: 30px;
+    }
+
+    .NetPa {
+        margin-left: 40px;
+        color: rgb(183, 177, 177);
+        font-size: 30px;
+        padding-top: 60px;
+        margin-bottom: 400px;
+        min-width: 220vw;
+    }
+
+    .NetPa a {
+        color: rgba(24, 85, 199, 0.838);
+    }
+}
+.faq h1{
+    color: white;
+    margin-top: 65px;
+    margin-left: 130px;
+}
+
+.faq-container {
+    max-width: 80vw;
+    margin: 20px auto;
+}
+
+.faq-item {
+    margin: 10px 0;
+}
+
+.faq-question {
+    width: 77vw;
+    background: #303030;
+    color: white;
+    padding: 15px;
+    font-size: 26px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+}
+
+.faq-question:hover {
+    background: #444;
+}
+
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-in-out;
+    background: #222;
+    padding: 0 15px;
+    width: 77vw;
+    font-size: 23px;
+}
+
+.faq-answer p {
+    margin: 15px 0;
+    color: white;
+}
+
+.faq-item.active .faq-answer {
+    max-height: 50vh;
+    padding: 15px;
+}
+
+.faq-item.active .icon {
+    transform: rotate(45deg);
+}
+
+.icon {
+    transition: transform 0.3s ease;
+    font-size: 50px;
+}

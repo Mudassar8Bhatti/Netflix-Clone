@@ -1,0 +1,1022 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <title>Netflix Pakistan - Watch TV Shows Online, Watch Movies Online</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@600&family=Poppins:wght@300;400;700&display=swap');
+
+        * {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: black;
+        }
+
+        .main {
+            background-image: url("PK-en-20250915-TRIFECTA-perspective_8dca2c96-6108-4a4e-aeb1-9bf033339db1_large.jpg");
+            height: 645px;
+            width: auto;
+            position: relative;
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: max(1200px, 100vw);
+        }
+
+        .main .box {
+            height: 645px;
+            width: 100%;
+            opacity: 0.7;
+            background-color: black;
+            position: absolute;
+            top: 0;
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+            height: 80px;
+            position: relative;
+            z-index: 10;
+            justify-content: space-around;
+            padding-top: 12px;
+            padding-left: 20px;
+        }
+
+        nav .logo {
+            padding-right: 250px;
+        }
+
+        .btn {
+            height: 34px;
+            width: 75px;
+            border-radius: 8px;
+            background-color: red;
+            color: white;
+            border-style: none;
+            font-weight: bold;
+        }
+
+        .btn:hover {
+            background-color: rgb(188, 7, 7);
+            transition: all 0.3s ease-in-out;
+        }
+
+
+        .hero {
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            top: 100px;
+            position: relative;
+            margin: auto;
+            text-align: center;
+        }
+
+        .span1 {
+            font-size: 55px;
+            font-weight: bold;
+            max-width: 60vw;
+        }
+
+        .span2 {
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        .span3 {
+            margin-top: 30px;
+        }
+
+        .hero input {
+            height: 53px;
+            width: 400px;
+            background-color: rgba(53, 51, 51, 0.687);
+            color: white;
+            border-radius: 4px;
+            border-style: none;
+            margin-top: 20px;
+            font-size: 15px;
+            padding-left: 20px;
+            border: 1px solid rgb(94, 91, 91);
+        }
+
+        .hero input::placeholder {
+            color: white;
+            font-size: 14px;
+        }
+
+        .hero button {
+            height: 55px;
+            width: 200px;
+            color: white;
+            background-color: rgb(245, 6, 6);
+            border-radius: 4px;
+            border-style: none;
+            font-weight: bold;
+            font-size: 20px;
+            margin-left: 10px;
+        }
+
+        .hero button:hover {
+            background-color: rgb(188, 7, 7);
+            transition: all 0.3s ease-in-out;
+        }
+
+        input:valid {
+            border: 2px solid green;
+        }
+
+        .seperation {
+            height: 7px;
+            background-color: rgb(113, 11, 11);
+            position: relative;
+            top: 240px;
+            border-radius: 70%;
+            margin-bottom: 20px;
+        }
+
+        .shad {
+            box-shadow: 10px 30px 35px 15px rgba(36, 36, 113, 0.685);
+            margin: auto;
+            width: 800px;
+            border-radius: 100%;
+            height: 8px;
+        }
+
+        .text,
+        .textt,
+        .texttt {
+            color: white;
+            margin-top: 65px;
+            margin-left: 130px;
+            font-size: 15px;
+        }
+
+        .slider {
+            width: 100%;
+            overflow: hidden;
+            padding: 20px 0;
+        }
+
+        .track {
+            display: flex;
+            animation: scroll 15s linear infinite;
+        }
+
+        .b1 {
+            height: 300px;
+            width: 200px;
+            margin: 20px;
+            flex-shrink: 0;
+            position: relative;
+        }
+
+        .b1 img {
+            border-radius: 15px;
+            height: 300px;
+            width: 200px;
+            object-fit: cover;
+        }
+
+        .one {
+            position: absolute;
+            bottom: 5px;
+            left: -20px;
+        }
+
+        .b1:hover {
+            transform: scale(1.05);
+            transition: all 0.3s ease-in-out;
+            cursor: pointer;
+        }
+
+        .track:hover {
+            animation-play-state: paused;
+        }
+
+        @keyframes scroll {
+            0% {
+                transform: translateX(0);
+            }
+
+            100% {
+                transform: translateX(-200%);
+            }
+        }
+
+
+        .reasons {
+            display: flex;
+            justify-content: space-around;
+            max-width: 80vw;
+            margin: auto;
+            flex-wrap: wrap;
+        }
+
+        .reason {
+            min-height: 330px;
+            max-width: 240px;
+            background: linear-gradient(to bottom, rgba(36, 36, 112, 0.685), rgba(109, 67, 74, 0.678));
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+
+
+        .reason h2 {
+            color: white;
+            margin-left: 20px;
+            margin-top: 20px;
+            margin-right: 10px;
+        }
+
+        .reason p {
+            color: rgba(207, 203, 203, 0.815);
+            margin-left: 20px;
+            margin-top: 20px;
+            margin-right: 10px;
+        }
+
+        .reason1 img {
+            margin-left: 150px;
+            margin-top: 32px;
+            height: 80px;
+        }
+
+        .reason2 img {
+            margin-left: 150px;
+            margin-top: 12px;
+            height: 70px;
+        }
+
+        .reason3 img {
+            margin-left: 150px;
+            margin-top: 20px;
+            height: 70px;
+            width: 60px;
+        }
+
+        .reason4 img {
+            margin-left: 150px;
+            margin-top: 10px;
+            height: 60px;
+            width: 60px;
+        }
+
+
+        #aw {
+            color: white;
+            margin-top: 60px;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        .footerform {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .footerform input {
+            height: 53px;
+            width: 600px;
+            background-color: rgba(53, 51, 51, 0.687);
+            color: white;
+            border-radius: 4px;
+            border-style: none;
+            margin-top: 20px;
+            font-size: 15px;
+            border: 1px solid rgb(94, 91, 91);
+            padding-left: 20px;
+        }
+
+        .footerform input::placeholder {
+            color: white;
+            font-size: 14px;
+        }
+
+        .footerform button {
+            height: 55px;
+            width: 200px;
+            color: white;
+            background-color: rgb(245, 6, 6);
+            border-radius: 4px;
+            border-style: none;
+            font-weight: bold;
+            font-size: 20px;
+            margin-left: 10px;
+        }
+
+        .footerform button:hover {
+            background-color: rgb(188, 7, 7);
+            transition: all 0.3s ease-in-out;
+        }
+
+        .footertext {
+            margin-left: 130px;
+        }
+
+        .footertext a {
+            color: rgb(158, 153, 153);
+        }
+
+        .foot {
+            display: flex;
+            width: 80vw;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            margin-bottom: 60px;
+        }
+
+        .foot p {
+            height: 20px;
+            width: 250px;
+            margin-top: 20px;
+            font-size: 14px;
+        }
+
+        .foot p:hover {
+            color: white;
+            transition: all 0.4s ease-out;
+        }
+
+        .footerbutton button {
+            margin-left: 130px;
+            height: 30px;
+            width: 130px;
+            background-color: transparent;
+            color: white;
+            border-style: none;
+            border: 1px solid white;
+            font-size: 16px;
+        }
+
+        .footerbutton i {
+            margin-left: 15px;
+        }
+
+        .footerbutton {
+            color: white;
+            margin-bottom: 30px;
+        }
+
+        .Netflix {
+            margin-left: 130px;
+            color: rgb(183, 177, 177);
+        }
+
+        .NetPa {
+            margin-left: 130px;
+            color: rgb(183, 177, 177);
+            font-size: 13px;
+            margin-top: 30px;
+            margin-bottom: 100px;
+        }
+
+        .NetPa a {
+            color: rgba(24, 85, 199, 0.838);
+        }
+
+        @media (max-width:500px) {
+
+            nav {
+                height: 130px;
+                position: relative;
+                z-index: 10;
+                padding-top: 20px;
+                padding-left: 20px;
+            }
+
+            nav .logo {
+                width: 270px;
+                height: 120px;
+                padding-top: 30px;
+                padding-right: 500px;
+            }
+
+            .btn {
+                height: 80px;
+                width: 130px;
+                border-radius: 8px;
+                font-size: 29px;
+                font-weight: bold;
+            }
+
+            .main {
+                height: 645px;
+                width: 285%;
+                position: relative;
+                background-repeat: no-repeat;
+                background-position: center center;
+            }
+
+            .main .box {
+                height: 645px;
+                width: 100%;
+                opacity: 0.7;
+                background-color: black;
+                position: absolute;
+                top: 0;
+            }
+
+            .hero .span1 {
+                position: relative;
+                top: -70px;
+                font-size: 50px;
+                max-width: 500px;
+            }
+
+            .hero .span2 {
+                position: relative;
+                top: -70px;
+                font-size: 33px;
+            }
+
+            .hero .span3 {
+                position: relative;
+                top: -95px;
+                font-size: 30px;
+                max-width: 540px;
+                text-align: center;
+            }
+
+            .hero form input {
+                position: relative;
+                top: -90px;
+                height: 77px;
+                width: 550px;
+            }
+
+            .hero form input::placeholder {
+                font-size: 25px;
+            }
+
+            .hero form button {
+                position: relative;
+                top: -90px;
+                height: 78px;
+                font-size: 27px;
+            }
+
+            .main .seperation {
+                position: relative;
+                top: 20px;
+            }
+
+            main .slider {
+                width: 284%;
+            }
+
+            main .text {
+                padding-left: 50px;
+                padding-top: 20px;
+                width: 500px;
+                font-size: 23px;
+                margin-left: 0;
+            }
+
+            main .textt {
+                padding-top: 50px;
+                color: white;
+                padding-left: 50px;
+                width: 600px;
+                font-size: 24px;
+                margin: 0;
+            }
+
+            .reasons .reason {
+                min-width: 258vw;
+                font-size: 30px;
+                padding-left: 10px;
+                margin-left: 10px;
+                position: relative;
+            }
+
+            .reasons .reason1 img {
+                height: 200px;
+                width: 180px;
+                position: absolute;
+                bottom: 0;
+                right: 0px;
+            }
+
+            .reasons .reason2 img {
+                height: 200px;
+                width: 180px;
+                position: absolute;
+                bottom: 0;
+                right: 0px;
+            }
+
+            .reasons .reason3 img {
+                height: 200px;
+                width: 180px;
+                position: absolute;
+                bottom: 0;
+                right: 0px;
+            }
+
+            .reasons .reason4 img {
+                height: 200px;
+                width: 180px;
+                position: absolute;
+                bottom: 0;
+                right: 0px;
+                padding-top: 50px;
+            }
+
+
+            footer #aw {
+                font-size: 34px;
+                min-width: 270vw;
+                margin: 0;
+                padding-top: 50px;
+                padding-left: 45px;
+            }
+
+            footer .footerform input {
+                height: 120px;
+                min-width: 250vw;
+                margin-left: 50px;
+                padding-left: 40px;
+                font-size: 30px;
+            }
+
+            footer .footerform input::placeholder {
+                font-size: 30px;
+                color: rgb(171, 166, 166);
+            }
+
+            footer .footerform button {
+                height: 120px;
+                width: 340px;
+                font-size: 40px;
+                margin-top: 30px;
+                border-radius: 5px;
+                margin-left: 50px;
+            }
+
+            footer .footertext {
+                font-size: 40px;
+                min-width: 200vw;
+                margin: 0;
+                padding: 50px;
+            }
+
+            footer .foot p {
+                font-size: 25px;
+                padding-top: 25px;
+                padding-bottom: 10px;
+                min-width: 200vw;
+            }
+
+            .footerbutton button {
+                height: 100px;
+                width: 250px;
+                margin-left: 50px;
+                font-size: 35px;
+            }
+
+            .footerbutton i {
+                font-size: 35px;
+            }
+
+            .Netflix {
+                margin-left: 40px;
+                font-size: 40px;
+                min-width: 230vw;
+                color: rgb(183, 177, 177);
+                padding-top: 30px;
+            }
+
+            .NetPa {
+                margin-left: 40px;
+                color: rgb(183, 177, 177);
+                font-size: 30px;
+                padding-top: 60px;
+                margin-bottom: 400px;
+                min-width: 220vw;
+            }
+
+            .NetPa a {
+                color: rgba(24, 85, 199, 0.838);
+            }
+        }
+
+        .faq h1 {
+            color: white;
+            margin-top: 65px;
+            margin-left: 130px;
+        }
+
+        .faq-container {
+            max-width: 80vw;
+            margin: 20px auto;
+        }
+
+        .faq-item {
+            margin: 10px 0;
+        }
+
+        .faq-question {
+            width: 77vw;
+            background: #303030;
+            color: white;
+            padding: 15px;
+            font-size: 26px;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 80px;
+        }
+
+        .faq-question:hover {
+            background: #444;
+        }
+
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.5s ease-in-out;
+            background: #222;
+            padding: 0 15px;
+            width: 77vw;
+            font-size: 23px;
+        }
+
+        .faq-answer p {
+            margin: 15px 0;
+            color: white;
+        }
+
+        .faq-item.active .faq-answer {
+            max-height: 50vh;
+            padding: 15px;
+        }
+
+        .faq-item.active .icon {
+            transform: rotate(45deg);
+        }
+
+        .icon {
+            transition: transform 0.3s ease;
+            font-size: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+
+        <nav>
+            <div class="logo">
+                <img src="logo.svg" alt="" width="160px" style="filter:brightness(0.90)">
+            </div>
+            <div>
+                <button class="btn">Sign In</button>
+            </div>
+        </nav>
+
+        <div class="box"></div>
+        <div class="hero">
+            <span class="span1">Unlimited movies, TV shows, and more</span>
+            <span class="span2">Starts at Rs 250. Cancel anytime.</span>
+            <span class="span3">Ready to watch? Enter your email to create or restart your membership.</span>
+
+            <span>
+                <form action="">
+                    <input type="email" required placeholder="Email Address" />
+                    <button>Get Started <i class="fa fa-chevron-right"></i></button>
+                </form>
+            </span>
+        </div>
+
+        <div class="seperation">
+            <div class="shad"></div>
+        </div>
+    </div>
+
+    <main>
+        <div class="text">
+            <h1>Trending Now</h1>
+        </div>
+        <div class="slider">
+            <div class="track">
+                <div class="b1"><a href="https://www.youtube.com/watch?v=ueCc-AYUMRs" target="_blank"><img
+                            src="wednesday.webp" alt=""></a>
+                    <div class="one"><svg height="100" width="200"><text y="90" fill="black" stroke="white"
+                                font-size="100">1</text></svg></div>
+                </div>
+                <div class="b1"><a href="https://www.youtube.com/watch?v=kQF1gl7nLaU"><img src="raid.webp" alt=""></a>
+                    <div class="one"><svg height="100" width="200"><text y="90" fill="black" stroke="white"
+                                font-size="100">2</text></svg></div>
+                </div>
+                <div class="b1"><a href="https://www.youtube.com/watch?v=zgGTVaG2UiQ"><img src="Squid.webp" alt=""></a>
+                    <div class="one"><svg height="100" width="200"><text y="90" fill="black" stroke="white"
+                                font-size="100">3</text></svg></div>
+                </div>
+                <div class="b1"><a href="https://www.youtube.com/watch?v=pgu-BsBV-2I"><img src="fall.webp" alt=""></a>
+                    <div class="one"><svg height="100" width="200"><text y="90" fill="black" stroke="white"
+                                font-size="100">4</text></svg></div>
+                </div>
+                <div class="b1"><a href="https://www.youtube.com/watch?v=ZXnUWEQydng"><img src="great.webp" alt=""></a>
+                    <div class="one"><svg height="100" width="200"><text y="90" fill="black" stroke="white"
+                                font-size="100">5</text></svg></div>
+                </div>
+                <div class="b1"><a href="https://www.youtube.com/watch?v=CWF8h754YR8"><img src="sexlife.webp"
+                            alt=""></a>
+                    <div class="one"><svg height="100" width="200"><text y="90" fill="black" stroke="white"
+                                font-size="100">6</text></svg></div>
+                </div>
+                <div class="b1"><a href="https://www.youtube.com/watch?v=_8KHfbpNXUQ"><img src="money.webp" alt=""></a>
+                    <div class="one"><svg height="100" width="200"><text y="90" fill="black" stroke="white"
+                                font-size="100">7</text></svg></div>
+                </div>
+                <div class="b1"><a href="https://www.youtube.com/watch?v=zgNOS5ofQhw"><img src="killer.webp" alt=""></a>
+                    <div class="one"><svg height="100" width="200"><text y="90" fill="black" stroke="white"
+                                font-size="100">8</text></svg></div>
+                </div>
+                <div class="b1"><a href="https://www.youtube.com/watch?v=hFmeQHbL6YQ"><img src="cid.webp" alt=""></a>
+                    <div class="one"><svg height="100" width="200"><text y="90" fill="black" stroke="white"
+                                font-size="100">9</text></svg></div>
+                </div>
+                <div class="b1"><a href="https://www.youtube.com/watch?v=KYD__HR-oac"><img src="murders.webp"
+                            alt=""></a>
+                    <div class="one"><svg height="100" width="200"><text y="90" fill="black" stroke="white"
+                                font-size="100">10</text></svg></div>
+                </div>
+
+                <div class="b1"><a href="https://www.youtube.com/watch?v=ueCc-AYUMRs" target="_blank"><img
+                            src="wednesday.webp" alt=""></a>
+                    <div class="one"><svg height="100" width="200"><text y="90" fill="black" stroke="white"
+                                font-size="100">1</text></svg></div>
+                </div>
+                <div class="b1"><a href="https://www.youtube.com/watch?v=kQF1gl7nLaU"><img src="raid.webp" alt=""></a>
+                    <div class="one"><svg height="100" width="200"><text y="90" fill="black" stroke="white"
+                                font-size="100">2</text></svg></div>
+                </div>
+                <div class="b1"><a href="https://www.youtube.com/watch?v=zgGTVaG2UiQ"><img src="Squid.webp" alt=""></a>
+                    <div class="one"><svg height="100" width="200"><text y="90" fill="black" stroke="white"
+                                font-size="100">3</text></svg></div>
+                </div>
+                <div class="b1"><a href="https://www.youtube.com/watch?v=pgu-BsBV-2I"><img src="fall.webp" alt=""></a>
+                    <div class="one"><svg height="100" width="200"><text y="90" fill="black" stroke="white"
+                                font-size="100">4</text></svg></div>
+                </div>
+                <div class="b1"><a href="https://www.youtube.com/watch?v=ZXnUWEQydng"><img src="great.webp" alt=""></a>
+                    <div class="one"><svg height="100" width="200"><text y="90" fill="black" stroke="white"
+                                font-size="100">5</text></svg></div>
+                </div>
+                <div class="b1"><a href="https://www.youtube.com/watch?v=CWF8h754YR8"><img src="sexlife.webp"
+                            alt=""></a>
+                    <div class="one"><svg height="100" width="200"><text y="90" fill="black" stroke="white"
+                                font-size="100">6</text></svg></div>
+                </div>
+                <div class="b1"><a href="https://www.youtube.com/watch?v=_8KHfbpNXUQ"><img src="money.webp" alt=""></a>
+                    <div class="one"><svg height="100" width="200"><text y="90" fill="black" stroke="white"
+                                font-size="100">7</text></svg></div>
+                </div>
+                <div class="b1"><a href="https://www.youtube.com/watch?v=zgNOS5ofQhw"><img src="killer.webp" alt=""></a>
+                    <div class="one"><svg height="100" width="200"><text y="90" fill="black" stroke="white"
+                                font-size="100">8</text></svg></div>
+                </div>
+                <div class="b1"><a href="https://www.youtube.com/watch?v=hFmeQHbL6YQ"><img src="cid.webp" alt=""></a>
+                    <div class="one"><svg height="100" width="200"><text y="90" fill="black" stroke="white"
+                                font-size="100">9</text></svg></div>
+                </div>
+                <div class="b1"><a href="https://www.youtube.com/watch?v=KYD__HR-oac"><img src="murders.webp"
+                            alt=""></a>
+                    <div class="one"><svg height="100" width="200"><text y="90" fill="black" stroke="white"
+                                font-size="100">10</text></svg></div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="textt">
+            <h1>More Reasons to Join</h1>
+        </div>
+
+        <div class="reasons">
+            <div class="reason reason1">
+                <h2>Enjoy on your TV</h2>
+                <p>Watch on Smart TVs, Playstation, Xbox, Chromecast, Apple TV, Blu-ray players, and more.</p>
+                <img src="ChatGPT Image Aug 24, 2025, 08_37_18 PM.png">
+            </div>
+            <div class="reason reason2">
+                <h2>Download your shows to watch offline</h2>
+                <p>Save your favorites easily and always have something to watch.</p>
+                <img src="ChatGPT Image Aug 24, 2025, 08_42_32 PM.png">
+            </div>
+            <div class="reason reason3">
+                <h2>Watch everywhere</h2>
+                <p>Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV.</p>
+                <img src="Capture2-removebg-preview.png">
+            </div>
+            <div class="reason reason4">
+                <h2>Create profiles for kids</h2>
+                <p>Send kids on adventures with their favorite characters in a space made just for them — free with
+                    your
+                    membership.</p>
+                <img src="Capture3-removebg-preview.png">
+            </div>
+        </div>
+
+        <section class="faq">
+            <h1>Frequently Asked Questions</h1>
+            <div class="faq-container">
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        What is Netflix?
+                        <span class="icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Netflix is a streaming service that offers a wide variety of award-winning TV shows, movies,
+                            anime, documentaries, and more on thousands of internet-connected devices.
+
+                            You can watch as much as you want, whenever you want without a single commercial – all for
+                            one low monthly price. There's always something new to discover and new TV shows and movies
+                            are added every week!</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        How much does Netflix cost?
+                        <span class="icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Watch Netflix on your smartphone, tablet, Smart TV, laptop, or streaming device, all for one
+                            fixed monthly fee. Plans range from Rs 250 to Rs 1,100 a month. No extra costs, no
+                            contracts.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        Where Can I Watch?
+                        <span class="icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Watch anywhere, anytime. Sign in with your Netflix account to watch instantly on the web at
+                            netflix.com from your personal computer or on any internet-connected device that offers the
+                            Netflix app, including smart TVs, smartphones, tablets, streaming media players and game
+                            consoles.
+
+                            You can also download your favorite shows with the iOS or Android app. Use downloads to
+                            watch while you're on the go and without an internet connection. Take Netflix with you
+                            anywhere.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        How do I cancel?
+                        <span class="icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Netflix is flexible. There are no pesky contracts and no commitments. You can easily cancel
+                            your account online in two clicks. There are no cancellation fees – start or stop your
+                            account anytime.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        What can I watch on Netflix?
+                        <span class="icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Netflix has an extensive library of feature films, documentaries, TV shows, anime,
+                            award-winning Netflix originals, and more. Watch as much as you want, anytime you want.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        Is Netflix good for Kids?
+                        <span class="icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>The Netflix Kids experience is included in your membership to give parents control while kids
+                            enjoy family-friendly TV shows and movies in their own space.
+
+                            Kids profiles come with PIN-protected parental controls that let you restrict the maturity
+                            rating of content kids can watch and block specific titles you don’t want kids to see.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+    </main>
+
+    <footer>
+        <p id="aw">Ready to watch? Enter your email to create or restart your membership.</p>
+
+        <div class="footerform">
+            <form action="" style="margin-top: 0px;">
+                <input type="email" required placeholder="Email Address" />
+                <button>Get Started <i class="fa fa-chevron-right"></i></button>
+            </form>
+        </div>
+
+        <div class="footertext">
+            <div>
+                <a href="/#">
+                    <p>Questions?Contact us.</p>
+                </a>
+            </div>
+            <div class="foot">
+                <a href="/#">
+                    <p>FAQ</p>
+                </a>
+                <a href="/#">
+                    <p>Help Center</p>
+                </a>
+                <a href="/#">
+                    <p>Account</p>
+                </a>
+                <a href="/#">
+                    <p>Media Center</p>
+                </a>
+                <a href="/#">
+                    <p>Investor Relations</p>
+                </a>
+                <a href="/#">
+                    <p>Jobs</p>
+                </a>
+                <a href="/#">
+                    <p>Ways to Watch</p>
+                </a>
+                <a href="/#">
+                    <p>Terms of Use</p>
+                </a>
+                <a href="/#">
+                    <p>Privacy</p>
+                </a>
+                <a href="/#">
+                    <p>Cookie Preferences</p>
+                </a>
+                <a href="/#">
+                    <p>Corporate Information</p>
+                </a>
+                <a href="/#">
+                    <p>Contact Us</p>
+                </a>
+                <a href="/#">
+                    <p>Speed Test</p>
+                </a>
+                <a href="/#">
+                    <p>Legal Notices</p>
+                </a>
+                <a href="/#">
+                    <p>Only on Netflix</p>
+                </a>
+                <a href="/#">
+                    <p>About Us</p>
+                </a>
+
+            </div>
+
+        </div>
+
+        <div class="footerbutton">
+            <button>
+                <details>
+                    <summary>English <i class="fa fa-language"></i></summary>
+                    <p>English</p>
+                </details>
+            </button>
+        </div>
+        <p class="Netflix">Netflix Pakistan</p>
+        <p class="NetPa">This page is protected by Google reCAPTCHA to ensure you're not a bot.<a href="/">Learn
+                more</a></p>
+    </footer>
+
+    <script>
+        const faqs = document.querySelectorAll(".faq-item");
+
+        faqs.forEach(faq => {
+            faq.querySelector(".faq-question").addEventListener("click", () => {
+                faqs.forEach(item => {
+                    if (item !== faq) item.classList.remove("active");
+                });
+                faq.classList.toggle("active");
+            });
+        });
+    </script>
+</body>
+
+</html>
